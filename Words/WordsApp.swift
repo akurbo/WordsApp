@@ -11,7 +11,8 @@ import SwiftUI
 struct WordsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .environmentObject(ContentModel())
         }
     }
 }
